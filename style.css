@@ -1,0 +1,536 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADDER STARTS  */
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 999;
+} 
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+header.sticky .logo,
+header.sticky ul li a 
+{
+    color:#000;
+} 
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+/* BANNER STARTS */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:  url(/web1/img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .banner h2 {
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    text-shadow: 2px 2px 1px red;
+
+}
+.banner h2 span {
+    color: #4978ff;
+}
+
+
+.sec{
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+}
+.mxw800p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+} 
+p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.services{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.services .box{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 5px 10px 20px rgba(235, 40, 40, 0.3);
+}
+.services .box .iconBx{
+    margin-top: 25px;
+}
+.services .box .iconBx img {
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.stats{
+    background: #000;
+    padding-top: 200px;
+    margin-top: -250px;
+}
+.stats h3,
+.stats p{
+    color: #fff;
+} 
+.statsBox{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.statsBox h2{
+    color: #fff;
+    font-size: 36px;
+}
+.statsBox h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.workBox{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.workBox .brand{
+    position: relative;
+    background: #4978ff;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workBox .brand:hover {
+    background: #000;
+}
+.workBox .brand a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.workBox .brand:hover a{
+    color: #fff;
+}
+
+.teamBx{
+     position: relative;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+     grid-gap: 30px;
+     max-width: 100%;
+     margin-top: 40px;
+}
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx .member .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.teamBx .member .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamBx .member .detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000 ;
+    transition: 0.2s;
+    opacity: 0;
+
+}
+.teamBx .member:hover .detail{
+    opacity: 0.8;
+}
+.teamBx .member .detail h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .detail h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+.contact{
+    position: relative;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+    height: 90vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .content .mxw800p h3{
+    margin-top: 50px;
+}
+.contact h3,
+.contact p{
+    color: #fff;
+}
+.contactform{
+    position: relative;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform form input{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 30px 0px 15px 0px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.contactform textarea{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+.contactform .subBtn{
+    margin: 50px auto;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.smi{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+} 
+
+.smi ul
+{
+    display: flex;
+
+}
+.smi ul li 
+{
+    list-style: none;
+
+}
+.smi ul li a 
+{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+    opacity: 0.5;
+}
+.smi ul li a:hover{
+    opacity: 1;
+}
+
+.smi ul li a img
+{
+    filter: invert(1);
+    width: 40px;
+}
+hr{
+    width: 10%;
+    margin: 0 auto;
+    animation: aniforhr 3s linear infinite;
+}
+@keyframes aniforhr{
+    0%,100%{width: 30%;}
+    50%{width: 100%;}
+}
+
+.copyright
+{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.copyright a{
+    text-decoration: none;
+    color: rgb(238, 131, 131); 
+}
+
+
+/* CODE FOR RESPONSIVE DESIGN  */
+
+
+.toggle{
+    display: none;
+}
+
+@media (max-width:  992px)
+{
+    .toggle
+    {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before
+    {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+    .toggle::after
+    {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header{
+        padding:5px 50px ;
+       background: #fff;
+    }
+    header ul 
+    {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        width: 100%;
+        height:100vh;
+        border-radius: 10px;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 75%);
+        
+        
+    }
+    header ul li a {
+        display: block;
+        color: #000;
+        margin: 20px auto;
+        padding: 10px;
+        
+    }
+    header.active ul
+    {
+        visibility: visible;
+        opacity: 1;
+        color: #fff;
+        display: block;
+        transition: 0.5s;
+        
+    }
+   
+    header .logo,
+    header ul li a{
+      color: #000;
+    }
+
+    .banner{
+      background-position: center;
+    }
+    .banner h2 {
+      font-size: 60px;
+      padding: 0 50px;
+      text-align: center;
+    }
+    .sec {
+    padding: 12px;
+    }
+    .stats{
+    padding-top: 100px;
+    margin-top: 0px;
+    }
+   .team{
+    margin-bottom: 50px;
+   }
+   .contactform textarea{
+    width: 80%;
+    margin: 0 auto;
+   }
+   .contact h3{
+    font-size: 25px;
+    font-weight: 600;
+   }
+   .content{
+    margin: 2px;
+   }
+   .contactform .subBtn{
+    margin: 30px auto;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+   }
+   .smi{
+    margin-bottom:10px;
+    } 
+    .smi ul li a img{
+    width:30px;
+    }
+
+    .workBox:nth-child(7){
+        display: none;
+    }
+}
