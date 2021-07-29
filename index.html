@@ -278,6 +278,9 @@
                 <p>You can send your issue or query by Message here.</p>
             </div>
             <div class="contactform">
+                <?php if(!empty($statusMsg)){ ?>
+        <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
+    <?php } ?>
                 <form action="contactus.php" method="POST">
                     <input type="text" name="name" placeholder="Full Name">
                     <input type="email" name="email" placeholder="Email Address">
