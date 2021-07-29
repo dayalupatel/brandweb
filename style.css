@@ -302,7 +302,7 @@ p{
 }
 .contactform{
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
@@ -313,7 +313,7 @@ p{
     background: transparent;
     border: none;
     outline: none;
-    margin: 30px 0px 15px 0px;
+    margin: 20px 0px 10px 0px;
     padding-bottom: 8px;
     border-bottom: 2px solid #fff;
     font-size: 20px;
@@ -329,10 +329,10 @@ p{
     font-size: 20px;
     color: #fff;
     display: block;
-    width: 100%;
+    width: 95%;
 }
 .contactform .subBtn{
-    margin: 50px auto;
+    margin: 40px auto;
     border: none;
     background: #fff;
     font-size: 20px;
