@@ -479,7 +479,7 @@ hr{
         color: #fff;
         display: block;
         transition: 0.5s;
-        animation: nav_ani 1s linear; 
+        animation: nav_ani 1s ease-out; 
         
     }
      @keyframes nav_ani {
@@ -543,3 +543,4 @@ hr{
     }
 
 }
+
