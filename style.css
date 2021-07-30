@@ -318,6 +318,7 @@ p{
     border-bottom: 2px solid #fff;
     font-size: 20px;
     color: #fff;
+    width:100%;
     
 }
 
@@ -329,7 +330,7 @@ p{
     font-size: 20px;
     color: #fff;
     display: block;
-    width: 95%;
+    width: 100%;
 }
 .contactform .subBtn{
     margin: 40px auto;
@@ -529,4 +530,8 @@ hr{
     .workBox:nth-child(7){
         display: none;
     }
+    header.sticky{
+    padding: 5px 10px;
+    }
+
 }
