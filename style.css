@@ -461,8 +461,11 @@ hr{
         visibility: hidden;
         opacity: 0;
         box-shadow: 0px 0px 20px rgb(0 0 0 / 75%);
-        
-        
+        animation: nav_ani 1s ease-out;
+     }
+     @keyframes nav_ani {
+            From {height:0;}
+             To {height:100%;}
     }
     header ul li a {
         display: block;
