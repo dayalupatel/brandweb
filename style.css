@@ -315,6 +315,7 @@ p{
     outline: none;
     margin: 20px 0px 10px 0px;
     padding-bottom: 8px;
+    padding-left: 10px;
     border-bottom: 2px solid #fff;
     font-size: 20px;
     color: #fff;
@@ -331,6 +332,7 @@ p{
     color: #fff;
     display: block;
     width: 100%;
+    padding-left:10px;
 }
 .contactform .subBtn{
     margin: 40px auto;
@@ -531,7 +533,7 @@ hr{
         display: none;
     }
     header.sticky{
-    padding: 5px 10px;
+    padding: 5px 50px;
     }
 
 }
