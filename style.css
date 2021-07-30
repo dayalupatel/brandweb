@@ -479,13 +479,9 @@ hr{
         color: #fff;
         display: block;
         transition: 0.5s;
-        animation: nav_ani 1s ease-out; 
         
     }
-     @keyframes nav_ani {
-              From{height:0px;}
-             To{height:100%;}
-    }
+    
    
     header .logo,
     header ul li a{
